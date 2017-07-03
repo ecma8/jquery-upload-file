@@ -36,7 +36,7 @@ app.post('/uploading', function(req, res, next){
     res.end(filesTmp);
  });
 });
-app.use('/public',express.static(__dirname+'/public'));
+app.use('/src',express.static(__dirname+'/src'));
 app.use('/public_img',express.static(__dirname+'/public_img'));
 var server = app.listen(8081, function () {
  
