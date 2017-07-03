@@ -27,3 +27,11 @@ $('#file').uploadFile({
 <input type="file" name="file" id="file" value="" />
 <img src="" alt="" style="width: 100px;height: 100px">
 ```
+### 测试demo运行
+* 把项目下载到本地
+* 把项目解压一下
+* 进入到解压后目录
+* 在当前窗口打开命令行
+* 输入npm install 等待下载完成
+* 下载完成后 输入node index.js
+* 打开浏览器 输入127.0.0.1:8081/index 即可看到相关页面
