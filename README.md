@@ -10,7 +10,9 @@
 ### JS插件配置
 ```html
 $('#file').uploadFile({
-    url:'/uploading',
+    url:'/uploading',//上传URL
+    type:'POST',//上传方式
+    dataType:'json',//返回数据格式类型
     returnSuccess:function(data){
         console.log(data.file[0])
         $('img').attr('src',data.file[0].path)
