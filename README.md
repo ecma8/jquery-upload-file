@@ -11,8 +11,8 @@
 ```html
 $('#file').uploadFile({
     url:'/uploading',//上传URL
-    type:'POST',//上传方式
-    dataType:'json',//返回数据格式类型
+    type:'POST',//上传方式 默认POST 可不填
+    dataType:'json',//返回数据格式类型 默认JSON 可不填
     returnSuccess:function(data){
         console.log(data.file[0])
         $('img').attr('src',data.file[0].path)
