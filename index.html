@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="public/jquery-upload-file.js"></script>
+</head>
+<body>
+	<input type="file" name="file" id="file" value="" />
+	<img src="" alt="" style="width: 100px;height: 100px">
+</body>
+<script>
+	$('#file').uploadFile({
+		url:'/uploading',
+		returnSuccess:function(data){
+			console.log(data.file[0])
+			$('img').attr('src',data.file[0].path)
+		},
+		returnError:function(data){
+			
+		}
+	})
+</script>
+</html>
