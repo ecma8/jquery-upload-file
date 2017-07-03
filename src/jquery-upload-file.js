@@ -4,7 +4,7 @@
 			return this.each(function(){
 				var type=obj.type?obj.type:'POST';
 				var url=obj.url?obj.url:'';//必填;
-				var dataType=obj.dataType?obj.dataType:'json';//必填;
+				var dataType=obj.dataType?obj.dataType:'json';
 				var returnSuccess=obj.returnSuccess;
 				var returnError=obj.returnError;
 				$(this).on('change',function(){
