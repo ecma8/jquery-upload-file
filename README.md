@@ -1,6 +1,8 @@
-# jquery-upload-file 基于jquery的文件上传
+# jquery-upload-file 基于jquery formdata的文件上传
 ## 本插件功能 
 * 原生file上传文件
+## 本插件弊端 
+* 由于本插件使用formdata 不支持ie9以下浏览器
 ## 插件配置 
 ### JS相关引入
 ```html
