@@ -15,8 +15,8 @@ $('#file').uploadFile({
     url:'/uploading',//上传URL
     type:'POST',//上传方式 默认POST 可不填
     dataType:'json',//返回数据格式类型 默认JSON 可不填
-    fileType:['jpg','jpeg','png'],//上传图片类型 直接添加图片后缀名
-    fileName:'file',//默认是file 类似form上传的filename值
+    fileType:['jpg','jpeg','png'],//上传图片类型 直接添加文件后缀名 大小写不限  默认为ppt
+    fileName:'file',//默认是file 类似form上传的filename值
     returnSuccess:function(data){
         console.log(data.file[0])
         $('img').attr('src',data.file[0].path)
@@ -28,7 +28,7 @@ $('#file').uploadFile({
     	//上传之前所执行的方法 比如弹出一个loading
     },
     errorMsg:function(data){
-		//返回的本地错误信息 类型不符合 大小不符合
+	//返回的本地错误信息 类型不符合 大小不符合
     }
 })
 ```  
