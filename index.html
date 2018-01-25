@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="src/jquery-1.11.3.js"></script>
-	<script src="src/jquery-upload-file.js"></script>
+	<script src="src/mini.js"></script>
 	<style>
 		div{
 			text-align: justify
@@ -25,7 +25,7 @@
 	    fileName:'file',//默认是file 类似form上传的filename值
 	    fileSize:'3', //单位是M 默认10M
 	    returnSuccess:function(data){
-	        console.log(data.file[0])
+	        console.log($(this))
 	        $('img').attr('src',data.file[0].path)
 	    },
 	    returnError:function(data){
